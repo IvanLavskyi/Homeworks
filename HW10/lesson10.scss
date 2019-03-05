@@ -1,0 +1,171 @@
+$br:8px;
+$bord:2px solid rgb(179, 177, 177);
+%cont{
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    border-radius: $br;
+    margin-top:3px;
+}
+%item{
+        width: 90%;
+        height: 80px;
+        border:$bord;
+        border-radius: $br; 
+        color: gray;
+        font-size: 50px;
+}
+%gal{
+    width: 700px;
+    height: 600px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 440px;
+    top: 100px;
+}
+%pic{
+    width: 200px;
+    height: 250px;
+    border-radius: $br;
+    border: $bord;
+    overflow: hidden;
+    font-size: 20px;
+}
+body{
+    background-color: rgb(219, 215, 215);
+}
+.header{
+    @extend %cont;
+    height: 100px;
+    .logo{
+        float: left;
+        width: 100px;
+        height: 50px;
+        margin-left: 20px;
+        color: red;
+        font-size: 50px;
+        margin: 20px;
+    }
+    .menu{
+        width: 150px;
+        height: 40px;
+        margin: 30px;
+        border: $bord;
+        display:inline-block;
+        float:right;
+        border-radius: $br;
+    }
+}
+.body{
+    @extend %cont;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+.submenu{
+    width: 30%;
+    height: 100%;
+    border-right: $bord;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .submenu-item1{
+        @extend %item;
+        &:hover {
+            background-color: rgb(226, 221, 221);
+        }
+        .galery{
+            @extend %gal;
+            .pic{
+                @extend %pic;
+                // img{
+                //     height: 50%
+                // }
+            }
+        }
+        &:hover .galery{
+            visibility: visible;
+        }
+    }  
+    .submenu-item2{
+        @extend %item;
+        &:hover {
+            background-color: rgb(226, 221, 221);
+        }
+        .galery{
+            @extend %gal;
+            .pic{
+                @extend %pic;
+            }
+        }
+        &:hover .galery{
+            visibility: visible;
+        }
+    }  
+    .submenu-item3{
+        @extend %item;
+        &:hover {
+            background-color: rgb(226, 221, 221);
+        }
+        .galery{
+            @extend %gal;
+            .pic{
+                @extend %pic;
+            }
+        }
+        &:hover .galery{
+            visibility: visible;
+        }
+    }  
+    .submenu-item4{
+        @extend %item;
+        &:hover {
+            background-color: rgb(226, 221, 221);
+        }
+        .galery{
+            @extend %gal;
+            .pic{
+                @extend %pic;
+            }
+        }
+        &:hover .galery{
+            visibility: visible;
+        }
+    }  
+}
+
+}
+.footer{
+    @extend %cont;
+    height: 150px; 
+    .logo{
+        float: left;
+        color: red;
+        font-size: 50px;
+        margin: 30px;
+        .name{
+            color: gray;
+            font-size: 15px;
+        }
+    }
+    .tytle{
+        width: 100px;
+        height: 130px;
+        margin: 10px 10px;
+        display:inline-block;
+        float:right;
+        text-align: center;
+        color: gray;
+
+    }
+}
+img{
+    height: 50%
+}

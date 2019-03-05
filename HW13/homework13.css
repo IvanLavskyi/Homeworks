@@ -1,0 +1,146 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.page {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row; }
+  .page .side-bar {
+    width: 44%;
+    height: 100%;
+    background-color: #f1ce07;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
+    .page .side-bar img {
+      width: 120px;
+      margin-top: 30px; }
+    .page .side-bar span {
+      font-size: 32px;
+      margin-top: 50px; }
+    .page .side-bar i {
+      margin-top: 30px; }
+  .page .check-in {
+    width: 56%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    padding: 30px; }
+    .page .check-in .name {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .page .check-in .name input {
+        border: none;
+        background-color: #cecbcb;
+        height: 30px;
+        outline: none; }
+        .page .check-in .name input:focus {
+          border: 1px solid gray; }
+    .page .check-in .gender {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .page .check-in .gender .gender-items {
+        display: flex;
+        justify-content: space-between; }
+        .page .check-in .gender .gender-items .gender-item-man {
+          position: relative; }
+          .page .check-in .gender .gender-items .gender-item-man label::before {
+            content: '♂';
+            font-size: 25px;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background-color: #cecbcb;
+            border-radius: 50%; }
+          .page .check-in .gender .gender-items .gender-item-man input[type="radio"]:checked + label::before {
+            color: blue; }
+        .page .check-in .gender .gender-items .gender-item-wooman {
+          position: relative; }
+          .page .check-in .gender .gender-items .gender-item-wooman label::before {
+            content: '♀';
+            font-size: 25px;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background-color: #cecbcb;
+            border-radius: 50%; }
+          .page .check-in .gender .gender-items .gender-item-wooman input[type="radio"]:checked + label::before {
+            color: palevioletred; }
+      .page .check-in .gender input[type="radio"] {
+        opacity: 0;
+        position: absolute; }
+      .page .check-in .gender label {
+        padding-left: 40px; }
+    .page .check-in .e-mail {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .page .check-in .e-mail input {
+        border: none;
+        background-color: #cecbcb;
+        height: 30px;
+        outline: none; }
+        .page .check-in .e-mail input:focus {
+          border: 1px solid gray; }
+    .page .check-in .country {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: relative; }
+      .page .check-in .country::after {
+        content: '▼';
+        position: absolute;
+        left: 200px;
+        top: 25px; }
+      .page .check-in .country select {
+        height: 30px;
+        border: none;
+        background-color: #cecbcb;
+        outline: none; }
+        .page .check-in .country select:focus {
+          border: 1px solid gray; }
+        .page .check-in .country select option {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          width: 100%; }
+      .page .check-in .country select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; }
+    .page .check-in .but {
+      width: 100px;
+      height: 35px;
+      color: white;
+      background-color: #73f3b7;
+      border: none;
+      font-size: 13px;
+      font-weight: bold;
+      outline: none; }
+
+/*# sourceMappingURL=homework13.css.map */

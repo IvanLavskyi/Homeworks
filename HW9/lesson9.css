@@ -1,0 +1,20 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    border: 1px solid royalblue;
+}
+.nav .item{
+    padding: 10px 20px;
+    width: 150px;
+    height: 50px;
+    border-radius:8px;
+    background-color: brown;
+    margin-right: 10px;
+}
+.menu-item{
+    width: 80px;
+    position:absolute;
+    visibility:hidden;
+}

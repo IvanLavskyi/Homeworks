@@ -1,0 +1,112 @@
+.header, .body, .footer {
+  background-color: white;
+  width: 1000px;
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 3px; }
+
+.body .submenu .submenu-item1, .body .submenu .submenu-item2, .body .submenu .submenu-item3, .body .submenu .submenu-item4 {
+  width: 90%;
+  height: 80px;
+  border: 2px solid #b3b1b1;
+  border-radius: 8px;
+  color: gray;
+  font-size: 50px; }
+
+.body .submenu .submenu-item1 .galery, .body .submenu .submenu-item2 .galery, .body .submenu .submenu-item3 .galery, .body .submenu .submenu-item4 .galery {
+  width: 700px;
+  height: 600px;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 440px;
+  top: 100px; }
+
+.body .submenu .submenu-item1 .galery .pic, .body .submenu .submenu-item2 .galery .pic, .body .submenu .submenu-item3 .galery .pic, .body .submenu .submenu-item4 .galery .pic {
+  width: 200px;
+  height: 250px;
+  border-radius: 8px;
+  border: 2px solid #b3b1b1;
+  overflow: hidden;
+  font-size: 20px; }
+
+body {
+  background-color: #dbd7d7; }
+
+.header {
+  height: 100px; }
+  .header .logo {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+    color: red;
+    font-size: 50px;
+    margin: 20px; }
+  .header .menu {
+    width: 150px;
+    height: 40px;
+    margin: 30px;
+    border: 2px solid #b3b1b1;
+    display: inline-block;
+    float: right;
+    border-radius: 8px; }
+
+.body {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .body .submenu {
+    width: 30%;
+    height: 100%;
+    border-right: 2px solid #b3b1b1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .body .submenu .submenu-item1:hover {
+      background-color: #e2dddd; }
+    .body .submenu .submenu-item1:hover .galery {
+      visibility: visible; }
+    .body .submenu .submenu-item2:hover {
+      background-color: #e2dddd; }
+    .body .submenu .submenu-item2:hover .galery {
+      visibility: visible; }
+    .body .submenu .submenu-item3:hover {
+      background-color: #e2dddd; }
+    .body .submenu .submenu-item3:hover .galery {
+      visibility: visible; }
+    .body .submenu .submenu-item4:hover {
+      background-color: #e2dddd; }
+    .body .submenu .submenu-item4:hover .galery {
+      visibility: visible; }
+
+.footer {
+  height: 150px; }
+  .footer .logo {
+    float: left;
+    color: red;
+    font-size: 50px;
+    margin: 30px; }
+    .footer .logo .name {
+      color: gray;
+      font-size: 15px; }
+  .footer .tytle {
+    width: 100px;
+    height: 130px;
+    margin: 10px 10px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    color: gray; }
+
+img {
+  height: 50%; }
+
+/*# sourceMappingURL=lesson10.css.map */

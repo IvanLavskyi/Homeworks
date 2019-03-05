@@ -1,0 +1,56 @@
+.body{
+    width: 250px;
+    height: 320px;
+    border: 2px solid black;
+    border-radius: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+   
+}
+.user{
+    width: 200px;
+    position: relative;
+    top:30px;
+    left: 20px;
+}
+h3{
+    position: relative;
+    left: 70px;
+}
+.bot1{
+    position: relative;
+    top: -420px;
+    transition-property: top;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.bot2{
+    position: relative;
+    top:-240px;
+    left: 200px;
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.smile{
+    position: relative;
+    left: -60px;
+    top:100px;
+    transition-property: top;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.body:hover{
+    width: 350px;
+
+}
+.body:hover .bot1{
+    top:-240px;
+}
+.body:hover .bot2{
+    left: 100px;
+}
+.body:hover .smile{
+    top: -230px;
+}

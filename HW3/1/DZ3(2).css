@@ -1,0 +1,21 @@
+.div1{
+    color: red;
+width: 600px;
+height: 500px; 
+background: blue;
+margin: auto;
+}
+.div2{
+    color: blue;
+width: 550px;
+height: 450px; 
+background: green;
+margin: auto;
+}
+.div3{
+    color: rgb(255, 187, 0);
+width: 500px;
+height: 400px; 
+background: yellow;
+margin: auto;
+}
