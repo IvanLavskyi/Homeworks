@@ -1,0 +1,216 @@
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0; }
+
+.header-wrapper header nav .item {
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease; }
+
+body {
+  background-color: #dddddd;
+  font-family: "Open Sans", sans-serif; }
+
+.container {
+  width: 960px;
+  margin: auto; }
+
+.header-wrapper {
+  padding-top: 50px;
+  padding-bottom: 30px; }
+  .header-wrapper header .logo {
+    display: inline-block;
+    float: left;
+    vertical-align: middle; }
+    .header-wrapper header .logo h1 {
+      font-family: Brush Script MT, Brush Script Std, cursive;
+      font-size: 50px;
+      background-color: #ff4486;
+      padding: 0px 15px;
+      border-radius: 6px;
+      color: white;
+      display: inline-block;
+      vertical-align: middle; }
+    .header-wrapper header .logo span {
+      display: inline-block;
+      vertical-align: middle;
+      color: #5a5858;
+      font-weight: bold;
+      margin-left: 5px;
+      font-family: "Open Sans", sans-serif; }
+  .header-wrapper header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    float: right; }
+    .header-wrapper header nav .item {
+      margin-left: 30px;
+      margin-top: 10px;
+      color: #5a5858;
+      font-weight: bold;
+      font-family: "Open Sans", sans-serif;
+      border-radius: 5px;
+      padding: 10px;
+      position: relative; }
+      .header-wrapper header nav .item a {
+        text-decoration: none;
+        color: #5a5858; }
+      .header-wrapper header nav .item:hover {
+        background-color: white; }
+      .header-wrapper header nav .item .submenu {
+        visibility: hidden;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        list-style: none;
+        background-color: white;
+        border-radius: 5px;
+        width: 150%;
+        border: 1px solid #b8b6b6; }
+        .header-wrapper header nav .item .submenu li {
+          border-bottom: 1px solid gray;
+          text-align: center;
+          padding: 10px 0;
+          position: relative; }
+        .header-wrapper header nav .item .submenu li:last-child {
+          border: none; }
+        .header-wrapper header nav .item .submenu li:hover {
+          background-color: #f0f9fc; }
+        .header-wrapper header nav .item .submenu .subsubmenu {
+          visibility: hidden;
+          list-style: none;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          background-color: white;
+          width: 150px;
+          border-radius: 5px;
+          border: 1px solid #b8b6b6; }
+        .header-wrapper header nav .item .submenu li:hover .subsubmenu {
+          visibility: visible; }
+      .header-wrapper header nav .item:hover .submenu {
+        visibility: visible; }
+    .header-wrapper header nav .item1 {
+      margin-left: 30px;
+      margin-top: 10px;
+      color: #5a5858;
+      font-weight: bold;
+      font-family: "Open Sans", sans-serif;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: #464646;
+      color: white; }
+      .header-wrapper header nav .item1 a {
+        text-decoration: none;
+        color: white; }
+
+.body-wrapper {
+  margin: 100px 0;
+  padding: 50px 0;
+  background-color: white; }
+  .body-wrapper .container .body {
+    color: #5e5b5b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .body-wrapper .container .body .left {
+      width: 33.3333%; }
+      .body-wrapper .container .body .left section {
+        margin-top: 30px; }
+        .body-wrapper .container .body .left section h3 {
+          font-family: Arial Black;
+          font-size: 20px;
+          margin: 0 0 30px 30px; }
+        .body-wrapper .container .body .left section p {
+          font-size: 15px;
+          font-family: Tahoma;
+          line-height: 3;
+          margin: 30px 0 30px 30px; }
+        .body-wrapper .container .body .left section span {
+          background-color: #0380d3;
+          color: white;
+          font-family: Arial Black;
+          font-size: 25px;
+          padding: 17px;
+          border-radius: 6px;
+          margin-left: 30px; }
+        .body-wrapper .container .body .left section a {
+          font-size: 15px;
+          font-family: Tahoma;
+          line-height: 2;
+          color: #06b1f5;
+          margin-left: 30px; }
+    .body-wrapper .container .body .right {
+      width: 66.6666%; }
+      .body-wrapper .container .body .right h1 {
+        font-family: Arial Black;
+        font-size: 30px;
+        margin-top: 30px; }
+      .body-wrapper .container .body .right h2 {
+        font-family: Arial Black;
+        font-size: 25px;
+        margin-top: 30px; }
+      .body-wrapper .container .body .right p {
+        font-size: 15px;
+        font-family: Tahoma;
+        line-height: 3;
+        margin-top: 30px; }
+
+.footer-wrapper footer {
+  margin-top: 100px; }
+  .footer-wrapper footer .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #5e5b5b; }
+    .footer-wrapper footer .row .column {
+      width: 25%; }
+      .footer-wrapper footer .row .column h1 {
+        font-family: Arial Black;
+        font-size: 20px;
+        margin-bottom: 30px; }
+      .footer-wrapper footer .row .column a {
+        font-size: 15px;
+        font-family: Tahoma;
+        line-height: 3;
+        color: #5e5b5b; }
+      .footer-wrapper footer .row .column p {
+        font-size: 15px;
+        font-family: Tahoma;
+        line-height: 3;
+        color: #5e5b5b; }
+      .footer-wrapper footer .row .column .social {
+        margin: 37px 0; }
+        .footer-wrapper footer .row .column .social img {
+          display: inline-block;
+          width: 40px; }
+    .footer-wrapper footer .row .inf {
+      text-align: center;
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 100px; }
+      .footer-wrapper footer .row .inf span {
+        font-size: 15px;
+        font-family: Tahoma;
+        color: #8a8989;
+        border-right: 0.5px solid #5e5b5b;
+        display: inline-block;
+        margin-right: 20px;
+        padding-right: 20px; }
+        .footer-wrapper footer .row .inf span:last-child {
+          margin: 0;
+          padding: 0;
+          border: none; }
+
+/*# sourceMappingURL=rightsidebar.css.map */

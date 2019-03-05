@@ -1,0 +1,104 @@
+@media (max-width:768px){
+   
+    .page{
+        position: relative;
+        
+    }
+    
+    .container{
+        width: 600px;
+    }
+    .hamburger{
+        visibility: visible;
+    }
+    .dopmenu{
+        visibility: visible;
+    }
+    
+    .header-wrapper header nav {
+        display: none;
+    }
+    .header-wrapper {
+        text-align: center;
+    }
+    .header-wrapper header .logo{
+        float: none;
+
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner .text{
+        width: 80%;
+    }
+    .banner .button{
+        width: 80%;
+        text-align: center;
+    }
+    .features-wrapper{
+        height: 2400px;
+    }
+    .features-wrapper .container .features{
+        flex-direction: column;
+    }
+    .features-wrapper .container .features .features1{
+        width: 100%;
+        height: 800px;
+        margin-bottom: 50px;
+    }
+    .features-wrapper .container .features .features1 img{
+        height: 70%;
+    }
+    .main-wrapper{
+        height: 1000px;
+    }
+    .main-wrapper .container .main{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .main-wrapper .container .main .left{
+        width: 100%;
+        border-top: 1px solid rgb(99, 97, 97);
+
+    }
+    .main-wrapper .container .main .left span{
+        padding: 17px 249px;
+    }
+    .main-wrapper .container .main .right{
+        width: 100%;
+        
+    }
+    .main-wrapper .container .main .right h1 {
+        margin-left: 0;
+    }
+    .main-wrapper .container .main .right h2 {
+        margin-left: 0;
+    }
+    .main-wrapper .container .main .right h3 {
+        margin-left: 0;
+    }
+    .main-wrapper .container .main .right span{
+        margin-left: 0;
+        padding-left: 175px;
+        padding-right: 175px;
+    }
+    .main-wrapper .container .main .left .galery{
+        height: 400px;
+    }
+    .main-wrapper .container .main .left .galery img {
+        width: 290px;
+         }
+         .main-wrapper .container .main .right span{
+             width: 80%;
+         }
+         .footer-wrapper footer .row{
+            flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-wrap: wrap; }
+         }  
+         .footer-wrapper footer .row .column{
+             width: 50%;
+             margin-top: 30px;
+         }   
+}
